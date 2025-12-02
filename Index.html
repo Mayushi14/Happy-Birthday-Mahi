@@ -160,10 +160,11 @@
 
         /* Enhanced Memory Cards */
         .memory-container {
-            display: grid;
-         grid-template-columns: 1fr;
-             gap: 2rem;
-              padding: 1rem;
+             display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    place-items: center;
         }
         .responsive-video {
     position: relative;
@@ -190,14 +191,16 @@
 }
 
         .memory-card {
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 20px;
-            padding: 1.5rem;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-            max-width: 700px;
+             width: 100%;
+    max-width: 700px;
+    margin: 0 auto; /* optional but harmless now */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
                   
         }
 
